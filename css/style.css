@@ -198,3 +198,9 @@ button:hover {
     border-radius: 25px;
     padding: 10px;
 }
+
+#timer {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: white;
+}

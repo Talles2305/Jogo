@@ -20,33 +20,29 @@
     <main>
         <div class="content">
             <h2>Memory Game</h2>
+            <div class="menugame">
+                <div id="scoreboard">
+                    <span>Jogador: <span id="player-name"></span></span>
+                    <span>Tempo: <span id="timer">00:00</span></span> <!-- Timer exibido -->
+                    <button id="restart">Jogar Novamente</button>
+                </div>                
+                <select id="difficulty">
+                    <option value="easy">Fácil</option>
+                    <option value="hard">Difícil</option>
+                </select>
 
-            <!-- Tela de Inicialização -->
-            <div id="initial-screen">
-                <div class="menugame">
-                    <label for="player-name-input">Jogador:</label>
-                    <input type="text" id="player-name-input" placeholder="Digite seu nome">
-                </div>
-                <div class="menugame">
-                    <label for="difficulty">Selecione a dificuldade:</label>
-                    <select id="difficulty">
-                        <option value="easy">Fácil</option>
-                        <option value="hard">Difícil</option>
-                    </select>
-                </div>
-                <button id="start-game">Iniciar Jogo</button>
+                <button id="clear-storage">Limpar Ranking</button>
+
             </div>
-
-            <!-- Tela do Jogo -->
-            <div id="game-screen" style="display: none;">
-                <div class="menugame">
-                    <div id="scoreboard">
-                        <span>Jogador: <span id="player-name-display"></span></span>
-                        <span>Pontuação: <span id="score">0</span></span>
-                        <button id="restart">Jogar Novamente</button>
-                    </div>
-                </div>
-
+            
+            <!-- Seção do ranking -->
+            <div id="ranking">
+                <h3>Ranking de Maiores Pontuadores</h3>
+                <ul id="ranking-list">
+                    <!-- A lista dos maiores pontuadores será exibida aqui -->
+                </ul>
+            </div>
+            
                 <div id="game">
                     <div class="card" data-value="A">
                         <div class="back-face">A</div>
